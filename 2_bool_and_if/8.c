@@ -41,6 +41,7 @@ d) learning Python\n");
 int main(void)
 {
     int item = show_menu();
+    printf("%d", item);
 
     // здесь выводите значение переменной item
     return 0;

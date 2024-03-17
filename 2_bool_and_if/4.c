@@ -9,7 +9,7 @@ int main(void)
         return 0;
     }
 
-    if ((a < b + c) || (b < c + a) || (c < b + a))
+    if ((a < b + c) && (b < c + a) && (c < b + a))
         printf("yes");
     else
         printf("no");
