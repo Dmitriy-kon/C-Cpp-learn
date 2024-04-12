@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MUL_VAR_NAME(A, B) mul##A##_##B
+#define MUL_VAR_NAME(A, B) mul_ ##A##_##B
 
 int main(void)
 {

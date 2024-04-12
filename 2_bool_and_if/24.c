@@ -1,18 +1,21 @@
-#define LANG_C
+#include <stdio.h>
 
-#if defined(LANG_C)
-#   include <stdio.h>
-#else
-#   include <iostream>
-#endif
+#define PERIMETR_CALC
 
 int main(void)
 {
-    int x = 5;
-#ifdef LANG_C
-    printf("%d\n", x);
+    int a, b;
+    if(scanf("%d, %d", &a, &b) != 2) {
+        printf("Input error.");
+        return 0;
+    }
+
+#ifndef PERIMETR_CALC
+    int res = a * b;
+    printf("%d", res);
 #else
-    std::cout << x << std::endl;
+    int res = 2 * (a + b);
+    printf("%d", res);
 #endif
     return 0;
 }
