@@ -3,23 +3,16 @@
 
 int main(void)
 {
-  int n, m, s = 0;
-  bool flag = false;
-  scanf("%d %d", &n, &m);
-  
-  for(int i = 0; i <= n; ++i){
-    for(int j = 0; j <= m; ++j){     
-      if(i + j >= 10)
-        printf("%d\n", s);
-        flag = true;
-        break;
-      s += i + j;
-    }
-    if (flag) {
-        break;
+    int num;
+    scanf("%d", &num);
+
+    if ((num * num) % 24 == 1)
+    {
+        printf("yes");
+        return 0;
     }
 
-  }
-  exit_sum: printf("%d\n", s);
-  return 0;
+    printf("no");
+    return 0;
+
 }

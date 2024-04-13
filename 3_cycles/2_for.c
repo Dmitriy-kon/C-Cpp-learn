@@ -12,18 +12,15 @@ int main(void)
     {
         if (flag >= 3)
         {   
-            printf("inner %d %d\n", sum1, sum2);
             sum2 += num % 10;
             num /= 10;
             continue;
         }
         flag++;
 
-        printf("outer %d %d flag = %d\n", sum1, sum2, flag);
         sum1 += num % 10;
         num /= 10;
     }
-    printf("%d %d\n", sum1, sum2);
 
     if (sum1 == sum2)
     {

@@ -7,6 +7,7 @@ int main(void)
 
     for (; i <= j; i++)
     {
+        
         printf("%d ", i);
     }
 
